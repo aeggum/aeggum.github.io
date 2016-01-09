@@ -1,0 +1,12 @@
+# Site settings
+title: 2016 Reading Challenge
+email: aeggum12@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+ 52 books in 52 weeks.  This is just the beginning.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://aeggum.github.io" # the base hostname & protocol for your site
+twitter_username: aeggum
+github_username:  aeggum
+
+# Build settings
+markdown: kramdown
