@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello, World"
 date:   2016-01-09 14:59:44
-categories: blog jekyll
+categories: blog
 ---
 Decided to create a GitHub Pages blog with Jekyll.  That was easy!
 
