@@ -18,6 +18,19 @@ layout: default
     {% endfor %}
   </ul>
 
+  <h1 class="page-heading">Readers</h1>
+  <ul>
+    {% for member in site.data.members %}
+      <li>
+        <a href="https://github.com/{{ member.github }}">
+          {{ member.name }}
+        </a>
+        ({{site.data.books[member.books] | size}} books read so far [<a href="books/{{member.books}}">list</a> | <a href="books/{{member.books}}?latest">latest</a>])
+      </li>
+    {% endfor %}
+  </ul>
+
+  <br>
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

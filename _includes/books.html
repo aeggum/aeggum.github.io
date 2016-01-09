@@ -1,0 +1,46 @@
+<div class="home">
+
+    <h1>Books read in 2016</h1>
+
+    {% assign lastbook = site.data.books[page.books] | last %}
+    {% assign cssid = '' %}
+
+    {% for book in site.data.books[page.books] %}
+
+    {% if book == lastbook %}
+        {% assign cssid = 'last' %}
+    {% endif %}
+
+    <div id="{{cssid}}">
+        <h2><a href="{{book.amazon}}">{{book.title}}</a> by <small>{{book.author}}</small></h2>
+            <p>
+                <span class="book-review">mini review:</span>
+                {% if book.review %}
+                    {{book.review}}
+                {% else %}
+                    <small>no review :(</small>
+                {% endif %}
+            </p>
+        {% if book.notes %}
+            <span class="book-notes-header">notes/thoughts:</span>
+            <ul>
+                {% for note in book.notes %}
+                <li class="book-note">{{note}}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+    {% if book != lastbook %}
+        <hr class="book-hr">
+    {% endif %}
+    {% endfor %}
+
+</div>
+
+<script type="text/javascript">
+    window.onload = function() {
+        if (window.location.search !== '') {
+            document.getElementById('last').scrollIntoView();
+        }
+    }
+</script>
