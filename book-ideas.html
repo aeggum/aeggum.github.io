@@ -1,0 +1,18 @@
+---
+layout: default
+permalink: /books/ideas/
+---
+
+<div class="home">
+
+    <h2>Book ideas</h2>
+
+    {% for book in site.data.books.ideas %}
+        {% if book.amazon %}
+            <span class="book-idea"><a href="{{book.amazon}}">{{book.title}}</a> by <small>{{book.author}}</small></span>
+        {% else %}
+            <span class="book-idea">{{book.title}} by <small>{{book.author}}</small></span>
+        {% endif %}
+    {% endfor %}
+
+</div>
