@@ -28,10 +28,11 @@ permalink: /music/
 
 	<ol>
 	{% for album in site.data.music.2020.albums.english %}
-		<li>
+		<li class="music-li">
 			<div>
 				<a href="{{album.spotify}}">{{album.title}} by {{album.author}}</a>
-				<span>{{album.review}}</span>
+				<br />
+				<span class="music-review">{{album.review}}</span>
 			</div>
 		</li>
     {% endfor %}
