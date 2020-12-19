@@ -1,0 +1,40 @@
+---
+layout: page
+title: Music
+permalink: /music/
+---
+
+<h2>
+	2020
+</h2>
+
+<div>
+	<h4>last.fm most played</h4>
+	<a href="https://www.last.fm/user/aeggum/library/albums?from=2020-01-01&to=2020-12-31">Top Albums</a>
+	<br />
+	
+	<a href="https://www.last.fm/user/aeggum/library/artists?from=2020-01-01&to=2020-12-31">Top Artists</a>
+	<br />
+
+	<a href="https://www.last.fm/user/aeggum/library/tracks?from=2020-01-01&to=2020-12-31">Top Tracks</a>
+	<br />
+</div>
+
+<div>
+	<h4>My Lists</h4>
+
+	<b>Best Albums (in english)</b>:
+	<br />
+
+	<ol>
+	{% for album in site.data.music.2020.albums.english %}
+		<li>
+			<div>
+				<a href="{{album.spotify}}">{{album.title}} by {{album.author}}</a>
+				<span>{{album.review}}</span>
+			</div>
+		</li>
+    {% endfor %}
+    </ol>
+
+</div>
