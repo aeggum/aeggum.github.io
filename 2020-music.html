@@ -24,6 +24,10 @@ permalink: /2020-music/
 				<a href="{{album.spotify}}">{{album.title}} by {{album.author}}</a>
 				<br />
 				<span class="music-review">{{album.review}}</span>
+				<br />
+				<span class="music-embed">
+					<iframe src="{{album.embed}}" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</span>
 			</div>
 		</li>
     {% endfor %}
@@ -40,6 +44,7 @@ permalink: /2020-music/
 				<a href="{{album.spotify}}">{{album.title}} by {{album.author}}</a>
 				<br />
 				<span class="music-review">{{album.review}}</span>
+				<br />
 				<span class="music-embed">
 					<iframe src="{{album.embed}}" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 				</span>
