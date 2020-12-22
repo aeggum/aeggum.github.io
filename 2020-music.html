@@ -14,79 +14,89 @@ permalink: /2020-music/
 <div class="music-section">
 	<h4>Best Music I *discovered* In 2020</h4>
 
-	<b>Best Albums (english)</b>:
-	<br />
+	<div class="tabbed-area">
 
-	<ol>
-	{% for album in site.data.music.2020.albums.english %}
-		<li class="music-li">
-			<div>
-				<a href="{{album.spotify}}">{{album.title}} by {{album.author}}</a>
-				<br />
-				<span class="music-review">{{album.review}}</span>
-				<br />
-				<span class="music-embed">
-					<iframe src="{{album.embed}}" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</span>
+		<ul class="tabs group">
+		    <li><a href="#english-albums">Albums (English)</a></li>
+		    <li><a href="#english-tracks">Tracks (English)</a></li>
+		    <li><a href="#spanish-albums">Albums (Español)</a></li>
+		    <li><a href="#spanish-tracks">Tracks (Español)</a></li>
+		</ul>
+		
+		<div class="box-wrap">
+		
+			<div id="english-albums">
+				<ol>
+				{% for album in site.data.music.2020.albums.english %}
+					<li class="music-li">
+						<div>
+							<a href="{{album.spotify}}">{{album.title}} by {{album.author}}</a>
+							<br />
+							<span class="music-review">{{album.review}}</span>
+							<br />
+							<span class="music-embed">
+								<iframe src="{{album.embed}}" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+							</span>
+						</div>
+					</li>
+			    {% endfor %}
+			    </ol>
 			</div>
-		</li>
-    {% endfor %}
-    </ol>
-
-    <br/>
-    <b>Best Albums (español)</b>:
-	<br />
-
-	<ol>
-	{% for album in site.data.music.2020.albums.spanish %}
-		<li class="music-li">
-			<div>
-				<a href="{{album.spotify}}">{{album.title}} by {{album.author}}</a>
-				<br />
-				<span class="music-review">{{album.review}}</span>
-				<br />
-				<span class="music-embed">
-					<iframe src="{{album.embed}}" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</span>
+			
+			<div id="english-tracks">
+				<ol>
+				{% for track in site.data.music.2020.tracks.english %}
+					<li class="music-li">
+						<div>
+							<a href="{{track.spotify}}">{{track.name}} by {{track.artist}}</a>
+							<br />
+							<span class="music-embed">
+								<iframe src="{{track.embed}}" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+							</span>
+						</div>
+					</li>
+				{% endfor %}
+				</ol>
 			</div>
-		</li>
-    {% endfor %}
-    </ol>
-
-    <br/>
-    <b>Favorite Tracks (english)</b>:
-	<br />
-
-	<ol>
-	{% for track in site.data.music.2020.tracks.english %}
-		<li class="music-li">
-			<div>
-				<a href="{{track.spotify}}">{{track.name}} by {{track.artist}}</a>
-				<br />
-				<span class="music-embed">
-					<iframe src="{{track.embed}}" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</span>
+			
+			<div id="spanish-albums">
+				<ol>
+				{% for album in site.data.music.2020.albums.spanish %}
+					<li class="music-li">
+						<div>
+							<a href="{{album.spotify}}">{{album.title}} by {{album.author}}</a>
+							<br />
+							<span class="music-review">{{album.review}}</span>
+							<br />
+							<span class="music-embed">
+								<iframe src="{{album.embed}}" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+							</span>
+						</div>
+					</li>
+			    {% endfor %}
+				</ol>
 			</div>
-		</li>
-    {% endfor %}
-    </ol>
 
-    <br/>
-    <b>Favorite Tracks (español)</b>:
-	<br />
-
-	<ol>
-	{% for track in site.data.music.2020.tracks.spanish %}
-		<li class="music-li">
-			<div>
-				<a href="{{track.spotify}}">{{track.name}} by {{track.artist}}</a>
-				<br />
-				<span class="music-embed">
-					<iframe src="{{track.embed}}" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</span>
+			<div id="spanish-tracks">
+				<ol>
+				{% for track in site.data.music.2020.tracks.spanish %}
+					<li class="music-li">
+						<div>
+							<a href="{{track.spotify}}">{{track.name}} by {{track.artist}}</a>
+							<br />
+							<span class="music-embed">
+								<iframe src="{{track.embed}}" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+							</span>
+						</div>
+					</li>
+				{% endfor %}
+				</ol>
 			</div>
-		</li>
-    {% endfor %}
-    </ol>
+		
+		</div>
+
+	</div>
+
+	
 
 </div>
