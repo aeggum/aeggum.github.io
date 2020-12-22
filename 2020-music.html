@@ -14,18 +14,12 @@ permalink: /2020-music/
 <div class="music-section">
 	<h4>Best Music I *discovered* In 2020</h4>
 
-	<div class="tabbed-area">
+	<div class="tabs">
+		<div class="tab">
+			<input type="radio" id="english-albums" name="tab-group-1" checked>
+			<label for="english-albums">Albums (English)</label>
 
-		<ul class="tabs group">
-		    <li><a href="#english-albums">Albums (English)</a></li>
-		    <li><a href="#english-tracks">Tracks (English)</a></li>
-		    <li><a href="#spanish-albums">Albums (Español)</a></li>
-		    <li><a href="#spanish-tracks">Tracks (Español)</a></li>
-		</ul>
-		
-		<div class="box-wrap">
-		
-			<div id="english-albums">
+			<div class="content">
 				<ol>
 				{% for album in site.data.music.2020.albums.english %}
 					<li class="music-li">
@@ -39,11 +33,16 @@ permalink: /2020-music/
 							</span>
 						</div>
 					</li>
-			    {% endfor %}
-			    </ol>
-			</div>
-			
-			<div id="english-tracks">
+		    	{% endfor %}
+		    	</ol>
+			</div> 
+		</div>
+
+		<div class="tab">
+			<input type="radio" id="english-tracks" name="tab-group-1">
+			<label for="english-tracks">Tracks (English)</label>
+
+			<div class="content">
 				<ol>
 				{% for track in site.data.music.2020.tracks.english %}
 					<li class="music-li">
@@ -57,9 +56,14 @@ permalink: /2020-music/
 					</li>
 				{% endfor %}
 				</ol>
-			</div>
-			
-			<div id="spanish-albums">
+			</div> 
+		</div>
+
+		<div class="tab">
+			<input type="radio" id="spanish-albums" name="tab-group-1">
+			<label for="spanish-albums">Albums (Español)</label>
+
+			<div class="content">
 				<ol>
 				{% for album in site.data.music.2020.albums.spanish %}
 					<li class="music-li">
@@ -73,11 +77,16 @@ permalink: /2020-music/
 							</span>
 						</div>
 					</li>
-			    {% endfor %}
+				{% endfor %}
 				</ol>
-			</div>
+			</div> 
+		</div>
 
-			<div id="spanish-tracks">
+		<div class="tab">
+			<input type="radio" id="spanish-tracks" name="tab-group-1">
+			<label for="spanish-tracks">Tracks (Español)</label>
+				
+			<div class="content">
 				<ol>
 				{% for track in site.data.music.2020.tracks.spanish %}
 					<li class="music-li">
@@ -91,8 +100,7 @@ permalink: /2020-music/
 					</li>
 				{% endfor %}
 				</ol>
-			</div>
-		
+			</div> 
 		</div>
 
 	</div>
