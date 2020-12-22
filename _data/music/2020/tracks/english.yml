@@ -1,45 +1,41 @@
 - name: Tokyo Drifting
   artist: Glass Animals, Denzel Curry
   spotify: https://open.spotify.com/track/1C29ru8rzgL83YXrGVOmUs?si=UU9PSN7vRrO-UYwGPT-JLg
-  embed: https://open.spotify.com/embed/track/1C29ru8rzgL83YXrGVOmUs
   notes:
     - Absolutely came out in 2019, but including it in 2020 list because it is that good.
 
-- title: Heat Waves
-  author: Glass Animals
+- name: Heat Waves
+  artist: Glass Animals
   spotify: https://open.spotify.com/track/0BHStoRqbogddXgezqumz3?si=gDgIarOwS0uUfb4ioAZVzw
-  embed: https://open.spotify.com/embed/track/0BHStoRqbogddXgezqumz3
     
-- title: Future Nostalgia
-  author: Dua Lipa
-  spotify: https://open.spotify.com/album/7fJJK56U9fHixgO0HQkhtI?si=Z2uBe3r3SAupgteGrSWFyA
-  review: >
-    Super dancy, great biking music and definitely puts me in a place just as the pandemic was getting started and weather improving!
+- name: Crickets
+  artist: Big Wild
+  spotify: https://open.spotify.com/track/1L3UxfVNQRO6HuFwPBTBtp?si=eHt65GeVQyaG45MG_i6oAA
 
-- title: Charli
-  author: Charli XCX
-  spotify: https://open.spotify.com/album/386IqvSuljaZsMjwDGGdLj?si=2BBXbldKTPubK1tOim2Ltg
-  review: >
-    Lizzo, HAIM, this album is a blast
-  notes:
-    - Amazing live performance at Pitchfork - https://www.youtube.com/watch?v=pmfG1yyvIIk
+- name: The Steps
+  artist: HAIM
+  spotify: https://open.spotify.com/track/2N2niBI0xAbLl3jI6l4S7g?si=-RZxvv_6SNWPMhglZt-3yg
 
-- title: We Will Always Love You
-  author: The Avalanches
-  spotify: https://open.spotify.com/album/755yBlrk0Sz8tIgMMTgyr1?si=f9--bEmQQbCapG4fPIM_nw
-  review: >
-    Amazing collaborations and the whole album just flows front to back, consistent theme
-  notes:
-    - Recency bias?  This came out in mid-December.
+- name: All That Ever Mattered
+  artist: HAIM
+  spotify: https://open.spotify.com/track/061ELbPn5CYMTq3LodjEtg?si=z-XLggMCQva7Xa6VBYa8Uw
 
-- title: The Color Of Nothing
-  author: ford.
-  spotify: https://open.spotify.com/album/4H0uHXcnZwYI9hcsUQ91OP?si=n0mYkD0LQa-owhciM5Km1w
-  review: >
-    Laid back work music, kinda similar to Tycho or Kasbo
+- name: 1999
+  artist: Charli XCX
+  spotify: https://open.spotify.com/track/05mAIVLkIWc2d1UBYZBCp8?si=JXnvYqruRHy-bjOSDtLQVg
 
-- title: Ylang Ylang EP
-  author: FKJ
-  spotify: https://open.spotify.com/album/0A13mnL2iaAoke3GXWsvB1?si=oJv7HAdaQN6s9vyoTB92Ow
-  review: >
-    Sounds super emotional; I listened to this way back in March so who knows.
+- name: Pretty Please
+  artist: Dua Lipa
+  spotify: https://open.spotify.com/track/6DXZiYUbrYgrVIhfX3U9Z2?si=t_tenKn3TxOCbZCNC6QhJA
+
+- name: Both Of Us
+  artist: Jayda G
+  spotify: https://open.spotify.com/track/7q584VOAZLMPaIQ9pedKFl?si=NZeqa3wrTIGBJXgQaPl0xA
+
+- name: Eastern Eyes Western Skies
+  artist: The Polish Ambassador
+  spotify: https://open.spotify.com/track/3JDfpAgeDBv3Lt6nQvH3IY?si=x7iYafNyT8qUrIJH2xvQyQ
+
+- name: Wildfires
+  artist: SAULT
+  spotify: https://open.spotify.com/track/4Tzw9IdZbVyzmpWrvsGaNX?si=x7YB2y3sSTaVe10HfLhRbg
