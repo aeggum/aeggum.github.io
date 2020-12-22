@@ -50,7 +50,7 @@ permalink: /2020-music/
 	<br />
 
 	<ol>
-	{% for album in site.data.music.2020.tracks.english %}
+	{% for track in site.data.music.2020.tracks.english %}
 		<li class="music-li">
 			<div>
 				<a href="{{track.spotify}}">{{track.name}} by {{track.artist}}</a>
