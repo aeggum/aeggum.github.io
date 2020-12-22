@@ -53,9 +53,11 @@ permalink: /2020-music/
 	{% for album in site.data.music.2020.tracks.english %}
 		<li class="music-li">
 			<div>
-				<a href="{{album.spotify}}">{{album.name}} by {{album.artist}}</a>
+				<a href="{{track.spotify}}">{{track.name}} by {{track.artist}}</a>
 				<br />
-				<span class="music-review">{{album.review}}</span>
+				<span class="music-embed">
+					<iframe src="{{track.embed}}" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</span>
 			</div>
 		</li>
     {% endfor %}
@@ -66,13 +68,13 @@ permalink: /2020-music/
 	<br />
 
 	<ol>
-	{% for album in site.data.music.2020.tracks.spanish %}
+	{% for track in site.data.music.2020.tracks.spanish %}
 		<li class="music-li">
 			<div>
-				<a href="{{album.spotify}}">{{album.name}} by {{album.artist}}</a>
+				<a href="{{track.spotify}}">{{track.name}} by {{track.artist}}</a>
 				<br />
 				<span class="music-embed">
-					<iframe src="{{album.embed}}" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+					<iframe src="{{track.embed}}" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 				</span>
 			</div>
 		</li>
