@@ -71,7 +71,9 @@ permalink: /2020-music/
 			<div>
 				<a href="{{album.spotify}}">{{album.name}} by {{album.artist}}</a>
 				<br />
-				<span class="music-review">{{album.review}}</span>
+				<span class="music-embed">
+					<iframe src="{{album.embed}}" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</span>
 			</div>
 		</li>
     {% endfor %}
