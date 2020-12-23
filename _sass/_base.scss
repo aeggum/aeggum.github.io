@@ -241,6 +241,7 @@ pre {
   bottom: 0;
   padding: 20px;
   border: 1px solid #ccc; 
+  display: none;
 }
 [type=radio]:checked ~ label {
   background: white;
@@ -249,4 +250,6 @@ pre {
 }
 [type=radio]:checked ~ label ~ .content {
   z-index: 1;
+  display: block;
+  height: 1200px;
 }
